@@ -1,7 +1,9 @@
+const baseUrl = "https://api-plataformasaude.herokuapp.com";
+
 function getMedicosJson(callback) {
   $.get({
     type: "GET",
-    url: "http://ec2-18-231-186-91.sa-east-1.compute.amazonaws.com:8080/medicos",
+    url: baseUrl + "/medicos",
     success: function (result) {
       console.log(result);
       return callback(result);
@@ -17,7 +19,7 @@ function getMedicosJson(callback) {
 function getPacientesJson(callback) {
     $.get({
       type: "GET",
-      url: "http://ec2-18-231-186-91.sa-east-1.compute.amazonaws.com:8080/pacientes",
+      url: baseUrl + "/pacientes",
       success: function (result) {
         console.log(result);
         return callback(result);
@@ -33,7 +35,7 @@ function getPacientesJson(callback) {
   function getAtendimentosJson(callback) {
     $.get({
       type: "GET",
-      url: "http://ec2-18-231-186-91.sa-east-1.compute.amazonaws.com:8080/atendimentos",
+      url: baseUrl + "/atendimentos",
       success: function (result) {
         console.log(result);
         return callback(result);

@@ -1,6 +1,6 @@
 var PacienteController = new function () {
 
-	let baseUrl = "http://ec2-18-231-186-91.sa-east-1.compute.amazonaws.com:8080/pacientes";
+	let baseUrl = "https://api-plataformasaude.herokuapp.com/pacientes";
 
 	this.getPacientes = function () {
 		$.get({

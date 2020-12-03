@@ -1,6 +1,6 @@
 var MedicoController = new function () {
 
-	let baseUrl = "http://ec2-18-231-186-91.sa-east-1.compute.amazonaws.com:8080/medicos";
+	let baseUrl = "https://api-plataformasaude.herokuapp.com//medicos";
 
 	this.getMedicos = function () {
 		$.get({

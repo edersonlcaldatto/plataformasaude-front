@@ -1,5 +1,5 @@
 var LaudoController = new (function () {
-    let baseUrl = "http://ec2-18-231-186-91.sa-east-1.compute.amazonaws.com:8080/laudos";
+    let baseUrl = "https://api-plataformasaude.herokuapp.com//laudos";
 
     this.getLaudos = function () {
         $.get({
